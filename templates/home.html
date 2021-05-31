@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>All You Need To Know !!</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename = 'assets/img/favicon.ico')}}" />
+
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="static/css/styles.css" rel="stylesheet" />
+        <link rel = "stylesheet" type = "text/css" href="{{ url_for('static', filename = 'css/styles.css')}}"  />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">ML MODELS</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ml-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
+                         <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>-->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+
+            <div class="hero-header-item hero-logo" aria-hidden="true" >
+                <div class="hero-logo-circles" >
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/1.svg')}}" />
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/2.svg')}}" />
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/3.svg')}}" />
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/4.svg')}}" />
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/5.svg')}}" />
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/6.svg')}}" />
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/7.svg')}}" />
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/8.svg')}}" />
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/9.svg')}}" />
+                  <img class="hero-logo-circle" src="{{ url_for('static', filename = 'assets/img/Atom/10.svg')}}" />
+                  <div class="ilogo"><img src="{{ url_for('static', filename = 'assets/img/logo.png')}}"/></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="masthead-heading">ML Models on the go!!<h3>One stop destinantion for basics of ML</h3></div>
+                
+            </div>
+
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">We don't want to push our ideas on to customers, we simply want to make what they want</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-file fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Content</h4>
+                        <p class="text-muted">Data Science Concepts</p>
+                        <form method="post", action="/concepts">
+                            <center>
+                                <button type="submit" , value='concepts!' class="btn btn-primary">
+                                                                Explore
+                                </button>
+                            </center>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-cubes fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">ML Datasets</h4>
+                        <p class="text-muted">Datasets on regression, classification and clustering</p>
+                        <form method="post", action="/datasets">
+                            <center>
+                                <button type="submit" , value='datasets!' class="btn btn-primary">
+                                                                Explore
+                                                           </button>
+                            </center>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Machine Learning Models</h4>
+                        <p class="text-muted">Test your built models with pre-built Machine Learning Models</p>
+                        <form method="post", action="/models">
+                            <center>
+                                <button type="submit" , value='models!' class="btn btn-primary">
+                                                                Explore
+                                                           </button>
+                            </center>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+             
+                <!-- Bootstrap core JS-->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+                <!-- Third party plugin JS-->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+                <!-- Contact form JS-->
+                <script src="{{ url_for('static', filename = 'assets/mail/jqBootstrapValidation.js')}}"></script>
+                <script src="{{ url_for('static', filename = 'assets/mail/contact_me.js')}}"></script>
+                <!-- Core theme JS-->
+                <script src="{{ url_for('static', filename = 'js/scripts.js')}}"></script>
+    </body>
+</html>
